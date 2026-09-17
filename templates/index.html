@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Portal — Demo</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="badge">CYBER AWARENESS LAB</div>
+    <h1>Campus Portal</h1>
+    <p class="sub">Student sign-in demonstration</p>
+
+    <form action="/login" method="post">
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" value="demo_student" autocomplete="off" required>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" value="CyberDemo123" autocomplete="off" required>
+
+      <button type="submit">Sign in</button>
+    </form>
+
+    <div class="warning">
+      <strong>Training only:</strong> This page intentionally uses plain HTTP so students can observe why unencrypted logins are dangerous.
+      Never use real passwords here.
+    </div>
+  </div>
+</body>
+</html>
